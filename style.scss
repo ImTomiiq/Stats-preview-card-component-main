@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+// - Very dark blue (main background): hsl(233, 47%, 7%)
+// - Dark desaturated blue (card background): hsl(244, 38%, 16%)
+// - Soft violet (accent): hsl(277, 64%, 61%)
+
+// - White (main heading, stats): hsl(0, 0%, 100%)
+// - Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+// - Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)
+
+$color-very_dark_blue: hsl(233, 47%, 7%);
+$color-dark_desaturated_blue: hsl(244, 38%, 16%);
+$color-soft_violet: hsl(277, 64%, 61%);
+
+$color-white: hsl(0, 0%, 100%);
+$color-transparent: hsla(0, 0%, 100%, 0.75);
+$color-transparent--2: hsla(0, 0%, 100%, 0.6);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-very_dark_blue;
+}
+
+.container {
+  background-color: $color-dark_desaturated_blue;
+  display: flex;
+  align-items: center;
+  width: 70rem;
+}
+
+.card {
+  padding-inline: 10rem;
+  padding-inline-end: 30rem;
+  .text-box {
+    font-family: "Inter", sans-serif;
+    color: $color-white;
+    letter-spacing: 0.1rem;
+    .text-header {
+      font-size: 1.5rem;
+      span {
+        color: $color-soft_violet;
+      }
+    }
+  }
+
+  .text-content {
+    font-family: "Inter", sans-serif;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    color: $color-transparent--2;
+  }
+  .text-stats {
+    padding-top: 8rem;
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    .stats-num {
+      font-weight: bold;
+      color: $color-white;
+      font-size: 2.25rem;
+    }
+    .stats-type {
+      padding-top: 1rem;
+      font-size: 1.2rem;
+      color: $color-transparent--2;
+    }
+  }
+}
+
+.text {
+  width: 180%;
+}

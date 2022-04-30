@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #090b1a;
+}
+
+.container {
+  background-color: #1b1938;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70rem;
+}
+
+.card {
+  padding-inline: 10rem;
+  -webkit-padding-end: 30rem;
+          padding-inline-end: 30rem;
+}
+
+.card .text-box {
+  font-family: "Inter", sans-serif;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+
+.card .text-box .text-header {
+  font-size: 1.5rem;
+}
+
+.card .text-box .text-header span {
+  color: #aa5cdb;
+}
+
+.card .text-content {
+  font-family: "Inter", sans-serif;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.card .text-stats {
+  padding-top: 8rem;
+  font-family: "Lexend Deca", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.card .text-stats .stats-num {
+  font-weight: bold;
+  color: white;
+  font-size: 2.25rem;
+}
+
+.card .text-stats .stats-type {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.text {
+  width: 180%;
+}
+/*# sourceMappingURL=style.css.map */
