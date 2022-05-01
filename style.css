@@ -43,7 +43,6 @@ body {
           padding-inline-start: 5rem;
   background-color: #1b1938;
   border-radius: 1rem;
-  margin-inline: 10rem;
 }
 
 .img-area img {
@@ -53,6 +52,10 @@ body {
           filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-135deg) saturate(600%) contrast(0.8);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+.img-mobile {
+  display: none;
 }
 
 .text-area {
@@ -107,5 +110,90 @@ body {
   font-size: 1.125rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 799px) {
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    -webkit-padding-start: 0rem;
+            padding-inline-start: 0rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 60%;
+  }
+  .img-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: inline-block;
+  }
+  .text-area {
+    padding-right: 0;
+    padding-top: 2rem;
+    padding-inline: 2rem;
+  }
+  .text-area .text-header {
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+  .text-area .text-content {
+    padding-top: 2rem;
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+    max-width: 40rem;
+  }
+  .text-area .text-stats {
+    min-width: 0rem;
+    padding-right: 0;
+    padding-top: 0;
+    width: 100%;
+    display: block;
+  }
+  .text-area .text-stats > * {
+    padding-top: 2rem;
+  }
+  .text-area .text-stats > *:last-child {
+    padding-bottom: 2rem;
+  }
+  .img-area img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0rem;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+  .card {
+    width: 80%;
+  }
+  .text-area .text-header {
+    font-size: 1rem;
+  }
+  .text-area .text-stats {
+    padding-top: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
